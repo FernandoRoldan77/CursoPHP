@@ -3,26 +3,26 @@
  Realizar un formulario que obtenga dichos datos y los valide. 
  Si alguno de ellos es incorrecto, el cliente deberá ser informado para corregirlo y, 
  si todos son correctos, deberá recibir el mensaje de registro exitoso en la pantalla. -->
+ 
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Menu</title>
+    <title>Login Usuario de menu</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
    
-    <h1>Seleccione su menu</h1>
-    <form action="usuario.php" method="POST">
-        <h2>Nombre</h2>
-        <input type="text" name="Nombre" id=""><br>
-        
-        <h2>Email</h2>
-        <input type="text" name="Mail" id=""><br>
+    <h1>Bienvenido, ingrese sus datos para su registro</h1>
+    <form action="validacionesUsuario.php" method="POST" target = "_blank">
+        <h2>Nombre:</h2>
+        <input type="text" name="nombre" ><br>
+        <h2>Contraseña:</h2>
+        <input type="password"  pattern=".{8,}" name="password"><br>
+        <h2>Email:</h2>
+        <input type="mail" name="email" id=""><br>
         <br><br>
-        <input type="submit" name="Aceptar" value="Aceptar">  
-    
+        <input type="submit" name="Aceptar"  value="Aceptar">  
     </form>
-    
-    
     
 </body>
 </html>
