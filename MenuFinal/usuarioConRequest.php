@@ -13,7 +13,7 @@
 <body>
    
     <h1>Bienvenido, ingrese sus datos para su registro</h1>
-    <form action="validacionesUsuarioConRequest.php" method="POST" target = "_top">
+    <form action="validacionesUsuarioConRequest.php" method="POST" >
         <h2>Nombre:</h2>
         <input type="text" name="nombre" ><br>
         <h2>Contraseña:</h2>
