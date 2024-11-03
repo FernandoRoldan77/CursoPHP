@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3307
--- Generation Time: Oct 31, 2024 at 10:47 PM
+-- Generation Time: Nov 03, 2024 at 10:18 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -28,6 +28,7 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `clientes` (
+  `ID` int(11) NOT NULL,
   `nombre` varchar(50) NOT NULL,
   `email` varchar(50) NOT NULL,
   `password` varchar(50) NOT NULL
@@ -37,11 +38,29 @@ CREATE TABLE `clientes` (
 -- Dumping data for table `clientes`
 --
 
-INSERT INTO `clientes` (`nombre`, `email`, `password`) VALUES
-('0', '0', '0'),
-('FERNANDO', 'FERNANDO@HO', '123456789'),
-('Estefania', 'Estefania@g', ''),
-('Estefania', 'Estefania@g', '');
+INSERT INTO `clientes` (`ID`, `nombre`, `email`, `password`) VALUES
+(1, 'Fernando77', 'F@gmail.com', 'fernando1234'),
+(2, 'Nymeria', 'Nymeria@hotmail.com', 'Nymeria123456789');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `clientes`
+--
+ALTER TABLE `clientes`
+  ADD PRIMARY KEY (`ID`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `clientes`
+--
+ALTER TABLE `clientes`
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
